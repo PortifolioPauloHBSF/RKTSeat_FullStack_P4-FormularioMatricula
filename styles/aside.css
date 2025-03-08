@@ -1,0 +1,24 @@
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+}
+
+aside .aside-container {
+    max-width: 31rem; /* 496px */ 
+}
+
+aside h2 {
+    font: 600 2.5rem/1.25 var(--font-family);
+    margin-bottom: .5rem;
+}
+
+aside h2 span {
+    color: var(--text-highlight);
+    margin-bottom: .5rem;
+}
+
+aside p {
+    margin-bottom: 2rem
+}
+
+
