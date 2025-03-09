@@ -63,9 +63,9 @@
                     <div class="textarea-wrapper">
                         <label for="medical-info">Informações médicas</label>
                         <textarea 
-                        name="medical-info" 
-                        id="medical-info"
-                        placeholder="Informe qualquer condições médicas que devemos nos atentar (se houver)"
+                            name="medical-info" 
+                            id="medical-info"
+                            placeholder="Informe qualquer condições médicas que devemos nos atentar (se houver)"
                         ></textarea>
                     </div>
 
@@ -97,10 +97,10 @@
                     <div class="input-wrapper">
                         <label for="cep">CEP</label>
                         <input 
-                        id="cep"
-                        name="cep"
-                        type="text"
-                        autocomplete="postal-code"
+                            id="cep"
+                            name="cep"
+                            type="text"
+                            autocomplete="postal-code"
                         >
                     </div>
 
@@ -108,21 +108,21 @@
                         <div class="input-wrapper flex-2">
                             <label for="street">Rua</label>
                             <input 
-                            id="street"
-                            name="street"
-                            type="text"
-                            autocomplete="street-address"
-                            disabled
+                                id="street"
+                                name="street"
+                                type="text"
+                                autocomplete="street-address"
+                                disabled
                             >
                         </div>
 
                         <div class="input-wrapper flex-1">
                             <label for="number">Numero</label>
                             <input 
-                            id="number"
-                            name="number"
-                            type="number"
-                            autocomplete="address-line1"
+                                id="number"
+                                name="number"
+                                type="number"
+                                autocomplete="address-line1"
                             >
                         </div>
                     </div>
@@ -131,23 +131,96 @@
                         <div class="input-wrapper flex-2">
                             <label for="city">Cidade</label>
                             <input 
-                            id="city"
-                            name="city"
-                            type="text"
-                            autocomplete=""
-                            disabled
+                                id="city"
+                                name="city"
+                                type="text"
+                                autocomplete=""
+                                disabled
                             >
                         </div>
 
                         <div class="input-wrapper flex-1">
                             <label for="state">Estado</label>
                             <input 
-                            id="state"
-                            name="state"
-                            type="text"
-                            autocomplete="address-level1"
-                            disabled
+                                id="state"
+                                name="state"
+                                type="text"
+                                autocomplete="address-level1"
+                                disabled
                             >
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="guardian">
+                    <legend>Informações do Responsável</legend>
+
+                    <div class="input-wrapper">
+                        <label for="guardian">Nome do responsável</label>
+                        <input
+                            id="guardian"
+                            name="guardian"
+                            type="text"
+                        >
+                        <small>Principal responsável legal e contato de emergência</small>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="phone">Telefone</label>
+                        <input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            placeholder="(XX) XXXXX-XXXX"
+                        >
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mail">Email</label>
+                        <input
+                            id="mail"
+                            name="mail"
+                            type="email"
+                            required
+                        >
+                        <div class="error">
+                            <img src="assets/icons/alert-circle.svg" alt="Icone de alerta de erro">
+                            <span>Insira um e-mail válido</span>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="enrollment">
+                    <legend>Opções de matrícula</legend>
+                
+                    <div class="input-wrapper">
+                        <label>Selecione o turno de estudo</label>
+
+                        <div class="radio-wrapper">
+                            <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input 
+                                    id="study-shift"
+                                    name="study-shift" 
+                                    type="radio" 
+                                    value="morning"
+                                >
+                                <img src="assets/icons/sun-cloud-02.svg" alt="Ícone de sol com nuvem">
+                                <label for="morning">Manhã</label>
+                            </div>
+
+                            <div class="radio-inner">
+                                <div class="radio-image"></div>
+                                <input 
+                                    id="study-shift"
+                                    name="study-shift" 
+                                    type="radio" 
+                                    value="evening"
+                                >
+                                <img src="assets/icons/sun-02.svg" alt="Ícone de sol com nuvem">
+                                <label for="evening">Tarde</label>
+                            </div>
                         </div>
                     </div>
                 </fieldset>

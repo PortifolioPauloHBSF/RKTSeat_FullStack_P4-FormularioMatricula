@@ -51,6 +51,29 @@ input[type="date"]::before {
     transform: translateY(-50%);
 }
 
+input[disabled] {
+    background-color: var(--surface-disabled);
+    border: 1px solid var(--stroke-default);
+    color: var(--text-primary);
+}
+
+input:invalid {
+    border: 0.125rem solid var(--sematinc-error);
+}
+
+input:valid + .error {
+    display: none;
+}
+
+input:invalid[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    color: var(--sematinc-error);
+    margin-top: .25rem;
+}
+
 select {
     position: relative;
 }
@@ -74,8 +97,9 @@ textarea{
     opacity: 50%;
 }
 
-input[disabled] {
-    background-color: var(--surface-disabled);
-    border: 1px solid var(--stroke-default);
-    color: var(--text-primary);
+.input-wrapper > small {
+    font: var(--text-sm);
+    color: #78716C;
+    display: inline-block;
+    margin-top: .25rem;
 }
