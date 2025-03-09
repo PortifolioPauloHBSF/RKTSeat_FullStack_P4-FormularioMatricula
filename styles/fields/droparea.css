@@ -1,6 +1,7 @@
 .dropzone {
     position: relative;
-    border: 1.25px var(--stroke-default) dashed;
+    outline: 1.25px var(--stroke-default) dashed;
+    border: 2px dashed transparent;
     border-radius: .25rem;
     display: grid;
     justify-items: center;
@@ -11,18 +12,20 @@
 
 .dropzone:hover,
 .dropzone:has(input:focus) {
-    border-width: 2px;
+    outline-width: 0;
     border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 }
 
 .dropzone:hover p,
 .dropzone:has(input:focus) p {
+    outline-width: 0;
     color: var(--text-tertiary);
 }
 
 .dropzone:hover svg path,
 .dropzone:has(input:focus) svg path {
+    outline-width: 0;
     stroke: var(--stroke-highlight);
 }
 
